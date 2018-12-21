@@ -4,7 +4,7 @@ SEOTitle: 胡超的博客 | HC Blog
 header-img: img/post-bg-desk.jpg
 email: 957062024@qq.com
 description: "Every failure is leading towards success."
-keyword: "HC, HC Blog, 胡超的博客, huchao, 胡超, iOS, Apple, iPhone"
+keyword: "HC, HC Blog, 胡超的博客, huchao, 胡超, JAVA, Python, ERP"
 url: "http://fortressbesieged.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/qiubaiying/fortressbesieged.github.io.git" # you code repository
@@ -12,7 +12,7 @@ github_repo: "https://github.com/qiubaiying/fortressbesieged.github.io.git" # yo
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "一只快乐的程序猿！"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/135291611.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
