@@ -15,4 +15,4 @@ Url:http://139.199.89.239:1008/88414687-3b91-4286-89ba-2dc813b107ce
 
 email:随便输入
 
-[![](img/jrebel.png)](https://fortressbesieged.github.io/)
+[![Alt text](/img/jrebel.png)](https://fortressbesieged.github.io/)
