@@ -4,7 +4,7 @@ title:      IntelliJ IDEA中免费永久jrebel激活
 subtitle:   手把手教你在IntelliJ IDEA中免费永久jrebel激活
 date:       2018-12-24
 author:     HC
-header-img: img/IDEA.jpg
+header-img: img/IDEA.png
 catalog: true
 tags:
     - Blog
