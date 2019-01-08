@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      Spring AOP详解
+subtitle:   Spring AOP详解
+date:       2019-01-08
+author:     HC
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - Spring AOP
+    - AOP
+---
 # Spring AOP详解
 
 一.前言
