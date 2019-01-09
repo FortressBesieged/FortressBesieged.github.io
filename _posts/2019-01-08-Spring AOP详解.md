@@ -337,3 +337,50 @@ CurrentTime = 1446130273737
 3、强制使用CGLIB生成代理
 
 前面说过Spring使用动态代理或是CGLIB生成代理是有规则的，高版本的Spring会自动选择是使用动态代理还是CGLIB生成代理内容，当然我们也可以强制使用CGLIB生成代理，那就是<aop:config>里面有一个"proxy-target-class"属性，这个属性值如果被设置为true，那么基于类的代理将起作用，如果proxy-target-class被设置为false或者这个属性被省略，那么基于接口的代理将起作用
+
+常见的切点表达式
+
+匹配方法签名
+
+<pre>
+// 匹配指定包中的所有的方法
+execution(* com.xys.service.*(..))
+
+// 匹配当前包中的指定类的所有方法
+execution(* UserService.*(..))
+
+// 匹配指定包中的所有 public 方法
+execution(public * com.xys.service.*(..))
+
+// 匹配指定包中的所有 public 方法, 并且返回值是 int 类型的方法
+execution(public int com.xys.service.*(..))
+
+// 匹配指定包中的所有 public 方法, 并且第一个参数是 String, 返回值是 int 类型的方法
+execution(public int com.xys.service.*(String name, ..))
+匹配类型签名
+
+// 匹配指定包中的所有的方法, 但不包括子包
+within(com.xys.service.*)
+
+// 匹配指定包中的所有的方法, 包括子包
+within(com.xys.service..*)
+
+// 匹配当前包中的指定类中的方法
+within(UserService)
+
+
+// 匹配一个接口的所有实现类中的实现的方法
+within(UserDao+)
+匹配 Bean 名字
+
+// 匹配以指定名字结尾的 Bean 中的所有方法
+bean(*Service)
+切点表达式组合
+
+// 匹配以 Service 或 ServiceImpl 结尾的 bean
+bean(*Service || *ServiceImpl)
+
+// 匹配名字以 Service 开头, 并且在包 com.xys.service 中的 bean
+bean(*Service) && within(com.xys.service.*)
+声明 advice
+</pre>
